@@ -1,0 +1,37 @@
+Лабораторная работа № 2. Ветвление и совместная разработка
+
+Репозиторий: https://github.com/Xjensu/module_git
+SSH: git@github.com:Xjensu/module_git.git
+Pull Request: https://github.com/Xjensu/module_git/pull/1
+Направление Pull Request: task1 → master. Pull Request открыт, не слит.
+Рабочая папка: /home/xjensu/Desktop/kozlovv/module_git
+
+Репозиторий на GitHub перед выполнением был пустым. Создана новая история лабораторной работы, использован существующий SSH-ключ аккаунта Xjensu.
+
+Соответствие коммитов шагам задания:
+c987469 — создание репозитория и .gitignore.
+51daca0 — первая половина новости в task1.
+80d1a1b — вторая половина новости добавлена через редактор GitHub; получена командой git pull origin task1.
+ae20ac3 — строка first commit в task2.
+71246b1 — строка second commit в task2; первое слияние в task1 выполнено как fast-forward.
+fdaecfb — строка third commit в task2.
+2332b81 — строка fourth commit в task1.
+ba2c512 — повторное слияние task2 в task1 и разрешение конфликта.
+
+Содержимое testGit.txt после разрешения конфликта:
+first commit
+second commit
+third commit
+fourth commit
+
+Итоговая история git log --graph --oneline --all:
+*   ba2c512 Resolve merge conflict
+|\  
+| * fdaecfb Third commit
+* | 2332b81 Fourth commit
+|/  
+* 71246b1 Second commit
+* ae20ac3 First commit
+* 80d1a1b Update news.txt
+* 51daca0 Add first half of news
+* c987469 Initial commit
